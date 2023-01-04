@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Data Operations Request Questionnaire</h1>
+    
+    <h2>Please fill out the following questionnaire:</h2>
+
+
+    <p>Is the client's data currently stored on one of our partner Data Management Platforms (DMP)?</p>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.providers }}
+        
+    <p>Is the client working with a 3rd party data provider?</p>
+        {{ form.y_n }}
+
+        <input type="submit" value="Submit" />
+    </select>
+    </form>
+      
+
+    
+</body>
+</html>
